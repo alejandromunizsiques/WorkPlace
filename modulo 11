@@ -1,0 +1,127 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/alejandromunizsiques/WorkPlace/blob/master/modulo%2011\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "id": "GXM1g9IM2uhD",
+        "outputId": "7b9d0331-6f03-4b41-95be-465318d15e30"
+      },
+      "source": [
+        "rut='27117206'\n",
+        "def invierte(cadena):\n",
+        "  return cadena[::-1]\n",
+        "invierte(rut)\n",
+        "rut_list=[]\n",
+        "x=0\n",
+        "for x in range(0,len(rut)):\n",
+        "  rut_list=[x]\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hello, world\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'60271172'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HAOO0S9z_FWP",
+        "outputId": "a39d2f61-761a-46bc-a8bc-3db0a4bd65ec"
+      },
+      "source": [
+        "def verificador_de_rut(RUT): \n",
+        "\n",
+        "   multiplicacion = []\n",
+        "   for x in range (0,len(RUT)): \n",
+        "      reversed_list = RUT[::-1]\n",
+        "      multiplicador = [2,3,4,5,6,7,2,3]\n",
+        "      multiplicacion.append(reversed_list [x] * multiplicador[x])\n",
+        "      print(multiplicacion)\n",
+        "      \n",
+        "   suma_total= 0\n",
+        "   for i in range (0,len(multiplicacion)):\n",
+        "     suma_total += multiplicacion[i]\n",
+        "      \n",
+        "   print(suma_total)\n",
+        "   \n",
+        " \n",
+        "      \n",
+        "  \n",
+        "verificador_de_rut([1,9,2,4,3,7,4,9])"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[18]\n",
+            "[18, 12]\n",
+            "[18, 12, 28]\n",
+            "[18, 12, 28, 15]\n",
+            "[18, 12, 28, 15, 24]\n",
+            "[18, 12, 28, 15, 24, 14]\n",
+            "[18, 12, 28, 15, 24, 14, 18]\n",
+            "[18, 12, 28, 15, 24, 14, 18, 3]\n",
+            "132\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
